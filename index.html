@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,7 +39,7 @@
         nav {
             position: relative;
             z-index: 3;
-            background: white;
+            background: #E3E3E3;
             padding: 10px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
@@ -58,9 +59,49 @@
         h2 {
             color: #333;
         }
+        
+.navbar {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E3E3E3;
+    padding: 20px 30px;
+    color: #000000;
+}
+
+.logo img {filter: invert(1);
+    height: 20px; /* Adjust size as needed */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+    justify-content: center;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    
+    border-bottom : 1mm solid rgb(0, 0, 0);
+}
+
     </style>
 </head>
 <body>
+
 
 <spline-viewer url="https://prod.spline.design/vt0-jLdU6G6ubzXr/scene.splinecode"></spline-viewer>
 
@@ -68,12 +109,24 @@
         <div class="label"></div>
     </div>
 
-    <nav>
-        <a href="#about-us">About Us</a>
-        <a href="#services">Services</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact-us">Contact Us</a>
-    </nav>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo-light.png" alt="Logo" />
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="browse-button">
+                <a href="#browse">Browse</a>
+            </div>
+        </nav>
+    </header>
+
 
     <section id="about-us" class="about-us">
         <h2>About Us</h2>
